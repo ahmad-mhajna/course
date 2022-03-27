@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: lightblue;
+        font-style: italic;
+      }
+      .big {
+        border: 40px 40px;
+        margin: 15px 20px;
+        padding: 25px 35px;
+        font-size: 30px;
+        width: 32%;
+      }
+      .mid {
+        margin: 15px 20px;
+        padding: 15px 20px;
+        font-size: 30px;
+        width: 18%;
+      }
+      .small {
+        margin: 15px 20px;
+        padding: 10px 15px;
+        font-size: 30px;
+        width: 14%;
+      }
+      .green {
+        background-color: green;
+        border-color: green;
+      }
+      .red {
+        background-color: red;
+        border-color: red;
+      }
+      .blue {
+        background-color: blue;
+        border-color: blue;
+      }
+      .org {
+        background-color: orange;
+        border-color: orange;
+      }
+      .gray {
+        background-color: gray;
+        border-color: gray;
+      }
+      .yellow {
+        background-color: yellow;
+        border-color: yellow;
+      }
+      .green:hover {
+        background-color: rgb(0, 97, 0);
+      }
+      .red:hover {
+        background-color: rgb(168, 0, 0);
+      }
+      .blue:hover {
+        background-color: rgb(0, 0, 153);
+      }
+      .org:hover {
+        background-color: rgb(172, 112, 0);
+      }
+      .gray:hover {
+        background-color: rgb(85, 84, 84);
+      }
+      .yellow:hover {
+        background-color: rgb(155, 155, 0);
+      }
+      .round button {
+        border-radius: 40px;
+      }
+      .ghost-button {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Flat</h1>
+      <button class="big green">register</button>
+      <button class="mid red">clear</button>
+      <button class="small blue">submit</button>
+    </div>
+    <div class="round">
+      <h1>round</h1>
+      <button class="big org">register</button>
+      <button class="mid yellow">clear</button>
+      <button class="small gray">submit</button>
+    </div>
+    <div>
+      <h1>Flat ghost</h1>
+      <button class="big ghost-button green">register</button>
+      <button class="mid ghost-button red">clear</button>
+      <button class="small ghost-button blue">submit</button>
+    </div>
+    <div class="round">
+      <h1>ghost round</h1>
+      <button class="big ghost-button org">register</button>
+      <button class="mid ghost-button yellow">clear</button>
+      <button class="small ghost-button gray">submit</button>
+    </div>
+  </body>
+</html>
