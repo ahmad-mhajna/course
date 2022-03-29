@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .tooltip::before {
+        content: attr(data-tooltip);
+        visibility: hidden;
+        width: 120px;
+        position: absolute;
+        background-color: gray;
+        color: #fff;
+        text-align: center;
+        padding: 6px 0;
+        border-radius: 10px;
+        z-index: 1;
+        bottom: 30px;
+      }
+
+      .tooltip:hover::before {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <header>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam illo non
+      suscipit, esse sapiente tempore ad neque odit! Suscipit Lorem ipsum dolor
+      sit amet, consectetur adipisicing elit. Aut obcaecati nesciunt cupiditate
+      illo sed dolores at? Eaque ut atque quaerat, architecto adipisci unde
+      temporibus mollitia voluptas reiciendis est illum non.
+      <a href="#" class="tooltip" data-tooltip="hello world"> ya </a>
+      assumenda illum obcaecati debitis repellendus impedit quidem doloribus
+      consequatur molestias numquam.
+    </h1>
+  </header>
+  <body></body>
+</html>
