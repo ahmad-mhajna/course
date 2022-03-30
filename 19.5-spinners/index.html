@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: black;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+      }
+      .spinner-1::before {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: 20%;
+        left: 100px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 3px solid gray;
+        border-top-color: rgb(7, 104, 143);
+        animation: spinner 0.7s linear infinite;
+      }
+      .spinner-2::before {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: 20%;
+        left: 300px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: rgb(7, 104, 143);
+        animation: spinner 0.7s linear infinite;
+      }
+      .spinner-3 {
+        position: absolute;
+        top: 20%;
+        left: 500px;
+        background-color: gray;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        animation: light 2s ease-in-out infinite;
+      }
+      .spinner-3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50px;
+        background-color: gray;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        animation: light 2s 0.5s ease-in-out infinite;
+      }
+      .spinner-3::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100px;
+        background-color: gray;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        animation: light 2s 1s ease-in-out infinite;
+      }
+      .spinner-4 {
+        position: absolute;
+        width: 120px;
+        top: 20%;
+        left: 700px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .dot-1,
+      .dot-2,
+      .dot-3 {
+        background-color: gray;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+      }
+      .dot-1 {
+        animation: up-down 3s ease-in-out infinite;
+      }
+      .dot-2 {
+        animation: up-down 3s 0.5s ease-in-out infinite;
+      }
+      .dot-3 {
+        animation: up-down 3s 1s ease-in-out infinite;
+      }
+      @keyframes up-down {
+        50% {
+          transform: translateY(-30px);
+        }
+      }
+      @keyframes light {
+        10% {
+          background-color: green;
+        }
+      }
+      @keyframes spinner {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="spinner-1"></div>
+      <div class="spinner-2"></div>
+      <div class="spinner-3"></div>
+      <div class="spinner-4">
+        <div class="dot-1"></div>
+        <div class="dot-2"></div>
+        <div class="dot-3"></div>
+      </div>
+    </div>
+  </body>
+</html>
