@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        text-align: center;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        background-color: yellow;
+      }
+      .topsidebar {
+        display: flex;
+        flex-direction: row;
+      }
+      header h1 {
+        margin: 20px;
+      }
+      .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: aqua;
+      }
+      .btn {
+        padding: 20px 50px;
+        font-size: 1.25rem;
+        position: relative;
+        margin: 32px;
+        overflow: hidden;
+        transition: all 0.8s ease;
+      }
+      /* button 2 */
+
+      .btn-2 {
+        background-color: transparent;
+        color: red;
+      }
+      .btn-2::before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 10%;
+        top: 0;
+        left: 0;
+        transform: translatex(-200px);
+        transition: all 0.8s ease;
+      }
+      .btn-2::after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 10%;
+        bottom: 0;
+        right: 0;
+        transform: translatex(200px);
+        transition: all 0.8s ease;
+      }
+      .btn-2:hover::before,
+      .btn-2:hover::after {
+        transform: translatex(0);
+      }
+      .btn-2:hover {
+        color: green;
+      }
+      .gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .gallery img {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        padding: 20px 50px;
+      }
+      .gallery p {
+        float: right;
+        width: 300px;
+        height: 300px;
+      }
+      .sidebar {
+        width: 20%;
+        height: 300px;
+      }
+      @media (max-width: 600px) {
+        .topsidebar {
+          flex-direction: column;
+          align-items: center;
+        }
+        .sidebar {
+          visibility: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="topsidebar">
+          <div class="btn btn-2">home</div>
+          <div class="btn btn-2">about</div>
+          <div class="btn btn-2">services</div>
+          <div class="btn btn-2">portfolio</div>
+          <div class="btn btn-2">contact</div>
+        </div>
+      </div>
+    </nav>
+    <header><h1>Welcome here some cats</h1></header>
+    <div class="sidebar">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        adipisci nostrum ad aliquid exercitationem voluptates ratione dicta,
+        autem sunt maxime similique magni enim laudantium culpa ex aut ullam!
+        Maxime, fugiat. Neque nesciunt alias in veniam omnis. Laborum esse iusto
+        vitae. Illum doloribus nulla fuga unde voluptatem. Repudiandae, iste
+        atque ex omnis suscipit sequi voluptatum laboriosam nihil in possimus
+        excepturi explicabo? Maiores, illo ea impedit in assumenda, numquam,
+        doloribus unde natus eveniet voluptas eaque culpa rem veritatis!
+        Repudiandae praesentium consequatur voluptatem molestiae officia quis
+        ipsa, adipisci doloremque ratione odit voluptas eum. Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Quia quaerat architecto cumque
+        tempora dolores voluptatum eos, totam magnam adipisci repellat facere
+        rerum dignissimos eius, velit libero inventore impedit laudantium ullam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        adipisci nostrum ad aliquid exercitationem voluptates ratione dicta,
+        autem sunt maxime similique magni enim laudantium culpa ex aut ullam!
+        Maxime, fugiat. Neque nesciunt alias in veniam omnis. Laborum esse iusto
+        vitae. Illum doloribus nulla fuga unde voluptatem. Repudiandae, iste
+        atque ex omnis suscipit sequi voluptatum laboriosam nihil in possimus
+        excepturi explicabo? Maiores, illo ea impedit in assumenda, numquam,
+        doloribus unde natus eveniet voluptas eaque culpa rem veritatis!
+        Repudiandae praesentium consequatur voluptatem molestiae officia quis
+        ipsa, adipisci doloremque ratione odit voluptas eum. Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Quia quaerat architecto cumque
+        tempora dolores voluptatum eos, totam magnam adipisci repellat facere
+        rerum dignissimos eius, velit libero inventore impedit laudantium ullam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        adipisci nostrum ad aliquid exercitationem voluptates ratione dicta,
+        autem sunt maxime similique magni enim laudantium culpa ex aut ullam!
+        Maxime, fugiat. Neque nesciunt alias in veniam omnis. Laborum esse iusto
+        vitae. Illum doloribus nulla fuga unde voluptatem. Repudiandae, iste
+        atque ex omnis suscipit sequi voluptatum laboriosam nihil in possimus
+        excepturi explicabo? Maiores, illo ea impedit in assumenda, numquam,
+        doloribus unde natus eveniet voluptas eaque culpa rem veritatis!
+        Repudiandae praesentium consequatur voluptatem molestiae officia quis
+        ipsa, adipisci doloremque ratione odit voluptas eum. Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Quia quaerat architecto cumque
+        tempora dolores voluptatum eos, totam magnam adipisci repellat facere
+        rerum dignissimos eius, velit libero inventore impedit laudantium ullam!
+      </p>
+    </div>
+    <div class="gallery">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1615789591457-74a63395c990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9tZXN0aWMlMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="cat"
+        />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+          facilis eaque ab dicta sed itaque soluta quas sint quam officia!
+          Mollitia perferendis, quaerat quas odio vitae sequi nulla officia
+          assumenda.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1615789591457-74a63395c990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9tZXN0aWMlMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="cat"
+        />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+          facilis eaque ab dicta sed itaque soluta quas sint quam officia!
+          Mollitia perferendis, quaerat quas odio vitae sequi nulla officia
+          assumenda.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1615789591457-74a63395c990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9tZXN0aWMlMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="cat"
+        />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+          facilis eaque ab dicta sed itaque soluta quas sint quam officia!
+          Mollitia perferendis, quaerat quas odio vitae sequi nulla officia
+          assumenda.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1615789591457-74a63395c990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9tZXN0aWMlMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="cat"
+        />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+          facilis eaque ab dicta sed itaque soluta quas sint quam officia!
+          Mollitia perferendis, quaerat quas odio vitae sequi nulla officia
+          assumenda.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1615789591457-74a63395c990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9tZXN0aWMlMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="cat"
+        />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+          facilis eaque ab dicta sed itaque soluta quas sint quam officia!
+          Mollitia perferendis, quaerat quas odio vitae sequi nulla officia
+          assumenda.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
