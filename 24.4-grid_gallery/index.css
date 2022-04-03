@@ -74,27 +74,3 @@
   grid-area: img14;
   background: url(/24.4-grid_gallery/images/gal-14.jpeg) center center;
 }
-@media (max-width: 820px) {
-  .container {
-    grid-template-areas:
-      "img1 img1 img2 img2 img2 img3 img4 img4"
-      "img1 img1 img2 img2 img2 img3 img4 img4"
-      "img5 img5 img2 img2 img2 img8 img8 img9"
-      "img5 img5 img6 img6 img7 img8 img8 img9"
-      "img5 img5 img6 img6 img13 img13 img13 img9"
-      "img10 img11 img11 img12 img13 img13 img13 img14"
-      "img10 img11 img11 img12 img13 img13 img13 img14";
-  }
-}
-@media (max-width: 600px) {
-  .container {
-    grid-template-areas:
-      "img1 img1 img2 img2 img2 img3 img4 img4"
-      "img1 img1 img2 img2 img2 img3 img4 img4"
-      "img5 img5 img2 img2 img2 img8 img8 img9"
-      "img5 img5 img6 img6 img7 img8 img8 img9"
-      "img5 img5 img6 img6 img13 img13 img13 img9"
-      "img10 img11 img11 img12 img13 img13 img13 img14"
-      "img10 img11 img11 img12 img13 img13 img13 img14";
-  }
-}
